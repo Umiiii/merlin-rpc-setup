@@ -1,0 +1,24 @@
+# update the database connection info based on your "docker-compose.yml"
+[Log]
+Environment = "development" # "production" or "development"
+Level = "debug" # "info"
+Outputs = ["stderr"]
+
+[StateDB]
+User = "state_user"
+Password = "state_password"
+Name = "state_db"
+Host = "127.0.0.1"
+Port = "5432"
+EnableLog = false
+MaxConns = 200
+
+[HashDB]
+User = "prover_user"
+Password = "prover_password"
+Name = "prover_db"
+Host = "127.0.0.1"
+Port = "5432"
+EnableLog = false
+MaxConns = 200
+
